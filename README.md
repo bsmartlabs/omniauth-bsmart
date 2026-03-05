@@ -1,14 +1,13 @@
-# omniauth-bsmart
+# OmniAuth bSmart Strategy
 
-[![Test](https://github.com/bsmartlabs/omniauth-bsmart/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/bsmartlabs/omniauth-bsmart/actions/workflows/test.yml)
-[![Release](https://github.com/bsmartlabs/omniauth-bsmart/actions/workflows/release.yml/badge.svg)](https://github.com/bsmartlabs/omniauth-bsmart/actions/workflows/release.yml)
-[![Gem Version](https://badge.fury.io/rb/omniauth-bsmart.svg)](https://badge.fury.io/rb/omniauth-bsmart)
+[![Test](https://github.com/bsmartlabs/omniauth-bsmart/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/bsmartlabs/omniauth-bsmart/actions/workflows/test.yml?query=branch%3Amain)
+[![Gem Version](https://img.shields.io/gem/v/omniauth-bsmart.svg)](https://rubygems.org/gems/omniauth-bsmart)
 
 🔌 OmniAuth OAuth2 strategy for bSmart accounts.
 
 ## Features
 
-- OAuth2 Authorization Code flow using bSmart Doorkeeper endpoints
+- OAuth2 Authorization Code flow using bSmart OAuth endpoints
 - User profile fetch from `GET /api/v6/user`
 - Automatic fallback to `GET /api/v6/me` when `/user` is unavailable
 - Auth hash with normalized `uid`, `info`, `credentials`, and `extra.raw_info`
@@ -59,9 +58,9 @@ provider :bsmart,
          me_url: '/api/v6/me'
 ```
 
-## bSmart OAuth App Setup
+## Provider App Setup
 
-Create an OAuth application in bSmart (Doorkeeper) and configure your callback URL:
+Create an OAuth application in bSmart and configure your callback URL:
 
 - Production OAuth base: `https://www.bsmart.it/oauth`
 - Production API base: `https://www.bsmart.it/api/v6`
