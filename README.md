@@ -12,12 +12,6 @@
 - Automatic fallback to `GET /api/v6/me` when `/user` is unavailable
 - Auth hash with normalized `uid`, `info`, `credentials`, and `extra.raw_info`
 
-## Requirements
-
-- Ruby `>= 3.2`
-- OmniAuth `~> 2.0`
-- `omniauth-oauth2` `>= 1.8`, `< 1.9`
-
 ## Installation
 
 ```ruby
@@ -116,7 +110,7 @@ bundle exec rake test_rails_integration
 
 - Ruby: `3.2`, `3.3`, `3.4`, `4.0`
 - Rails integration lanes: `~> 7.1.0`, `~> 7.2.0`, `~> 8.0.0`, `~> 8.1.0`
-- `omniauth-oauth2`: `1.8.x`
+- `omniauth-oauth2`: `1.8.x`, `1.9.x`
 
 ## Release
 
