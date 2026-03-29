@@ -34,7 +34,13 @@ module OmniAuth
           last_name: raw_info['surname'],
           nickname: raw_info['email'],
           image: raw_info['avatar_url'],
-          roles: raw_info['roles']
+          roles: raw_info['roles'],
+          # Legacy aliases for existing consumers (e.g. verifiche)
+          surname: raw_info['surname'],
+          oauth_id: raw_info['id'],
+          role_names: raw_info['roles'],
+          gravatar_url: raw_info['avatar_url'],
+          api_auth_token: raw_info['auth_token']
         }.compact
       end
 

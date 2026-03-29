@@ -40,7 +40,11 @@ class OmniauthBsmartTest < Minitest::Test
         last_name: 'Lovelace',
         nickname: 'teacher@example.test',
         image: 'https://www.bsmart.it/avatar/42.png',
-        roles: %w[teacher]
+        roles: %w[teacher],
+        surname: 'Lovelace',
+        oauth_id: 42,
+        role_names: %w[teacher],
+        gravatar_url: 'https://www.bsmart.it/avatar/42.png'
       },
       strategy.info
     )
